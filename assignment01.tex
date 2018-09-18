@@ -1,3 +1,4 @@
+
 \documentclass[paper=a4, fontsize=12pt]{scrartcl} 
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
 \usepackage{graphicx}
@@ -34,9 +35,7 @@ Git Utility\\  % The assignment title
 
 \maketitle % Print the title
 
-%----------------------------------------------------------------------------------------
-%	PROBLEM 1
-%----------------------------------------------------------------------------------------
+%-----------------------------------------Body-----------------------------------
 
 \section{Introduction to Git}
 \par Git is a open source platform. It is available globally on git hub website and also in the form of desktop application with Graphical User Interface(GUI) for Windows, Mac and Linux platforms.  It is version control system that helps us to manage changes made to documents and other computer files. We can maintain source files, documentations, short stories, pictures and manage the large projects. Projects with lot of revision and changes can be backtracked to the older version. Multiple person can work at a time on the single project from different places.  The changes are clearly communicated with no error.
@@ -51,7 +50,7 @@ Git Utility\\  % The assignment title
 \par After configure git, make directory with the command "mkdir assignment01", and enter in the working directory assignemnt01 using "cd assignment01". Than, initialize the repository with "git init" command. We can also do it by using GUI on website. see figure \ref{crepo}.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{fig/createrepository.PNG}
+\includegraphics[width=\linewidth]{createrepository.PNG}
 \caption{Create Repository}
 \label{crepo}
 \end{figure}
@@ -60,22 +59,47 @@ Git Utility\\  % The assignment title
 After create the repository I make a file. I created the file in assignment01 repository with the name "assignment01.tex" see figure \ref{cfile}.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{fig/createfile.PNG}
+\includegraphics[width=\linewidth]{createfile.PNG}
 \caption{Create file}
 \label{cfile}
 \end{figure}
 
 \subsection{Commit}
-After create the empty file, I modified the data in the .tex file. and than commit it. See figure \ref{ccom}.
+Commit is the process of updating the repository. It saves the all updated files. After create the empty file, I modified the data in the .tex file. and than commit it. See figure \ref{ccom}.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{fig/Commit.PNG}
+\includegraphics[width=\linewidth]{Commit.PNG}
 \caption{Commit the file}
 \label{ccom}
 \end{figure}
 
 
+\subsection{Pulling}
+Pulling is the process of remotely access the file to the local computer. Local computer must has the git repository. 
+The git repository can be create by \textit{"git init"} command. After creating the git repository on my local computer, pull the directory from gitHub. Shown in figure \ref{cpull}.
 
+
+
+\begin{figure}
+\includegraphics[width=\linewidth]{pull.png}
+\caption{pull the file from "github.com/farhan-93/assignment01.git"}
+\label{cpull}
+\end{figure}
+
+
+
+
+\subsection{Push}
+Pushing is the process of remotely update the file to gitHub repository from the local computer. Local computer must has the git repository. The process of pushing is shown in figure \ref{cpush}.
+
+
+
+
+\begin{figure}
+\includegraphics[width=\linewidth]{push.png}
+\caption{push the file from local computer to "github.com/farhan-93/assignment01.git"}
+\label{cpush}
+\end{figure}
 
 
 %----------------------------------------------------------------------------------------
