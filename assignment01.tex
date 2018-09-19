@@ -1,9 +1,9 @@
-
 \documentclass[paper=a4, fontsize=12pt]{scrartcl} 
 \usepackage{amsmath,amsfonts,amsthm} % Math packages
 \usepackage{graphicx}
 
 \setlength{\parskip}{0.5em}
+\usepackage{hyperref}
 
 
 \numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
@@ -41,14 +41,15 @@ Git Utility\\  % The assignment title
 \par Git is a open source platform. It is available globally on git hub website and also in the form of desktop application with Graphical User Interface(GUI) for Windows, Mac and Linux platforms.  It is version control system that helps us to manage changes made to documents and other computer files. We can maintain source files, documentations, short stories, pictures and manage the large projects. Projects with lot of revision and changes can be backtracked to the older version. Multiple person can work at a time on the single project from different places.  The changes are clearly communicated with no error.
 
 \section{How to use Git?}
-\par For using the gitHub we have required GitHub account. We can sign-up account easily its free for every one. GitHub provides free unlimited storage publicly and chrages \$7 per month for private storage.  
+\par For using the Git, we have required GitHub account. We can sign-up account easily its free for every one. GitHub provides free unlimited storage publicly and chrages \$7 per month for private storage.  
 
    \par git config --global user.name "Syed Farhan Alam Zaidi"
    \par  git config --global user.email "syedfarhanalam1993@gmail.com"
 
 \subsection{Create Repository}
-\par After configure git, make directory with the command "mkdir assignment01", and enter in the working directory assignemnt01 using "cd assignment01". Than, initialize the repository with "git init" command. We can also do it by using GUI on website. see figure \ref{crepo}.
+\par After configure git, make directory with the command "mkdir assignment01", and enter in the working directory assignemnt01 using "cd assignment01". Than, initialize the repository with "git init" command to make git directory. We can also do it by using GUI on website, see figure \ref{crepo}.
 Figure \ref{repository} shows the current assignment01 repository.
+GitHub URL: \underline{ \url{https://github.com/farhan-93/assignment01.git}}
 
 
 \begin{figure}
@@ -73,7 +74,7 @@ After create the repository I make a file. I created the file in assignment01 re
 \end{figure}
 
 \subsection{Commit}
-Commit is the process of updating the repository. It saves the all updated files. After create the empty file, I modified the data in the .tex file. and than commit it. See figure \ref{ccom}.
+Commit is the process of updating the repository. It saves the all updated files. After create the empty file, I modified the data in the .tex file and than commit it, shown in figure \ref{ccom}.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{Commit.PNG}
@@ -84,7 +85,7 @@ Commit is the process of updating the repository. It saves the all updated files
 
 \subsection{Pulling}
 Pulling is the process of remotely access the file to the local computer. Local computer must has the git repository. 
-The git repository can be create by \textit{"git init"} command. After creating the git repository on my local computer, pull the directory from gitHub. Shown in figure \ref{cpull}.
+The git repository can be create by \textit{"git init"} command. After creating the git repository on my local computer, pull the directory from gitHub. The process shown in figure \ref{cpull}.
 
 
 
@@ -100,9 +101,6 @@ The git repository can be create by \textit{"git init"} command. After creating 
 \subsection{Pushing}
 Pushing is the process of remotely update the file to gitHub repository from the local computer. Local computer must has the git repository. The process of pushing is shown in figure \ref{cpush} and \ref{cpush1}. In figure \ref{cpush} shows that its requires authentication when we push to the GitHub repository. Figure \ref{cpush1} shows the successful push operation.
 
-
-
-
 \begin{figure}
 \includegraphics[width=\linewidth]{push.png}
 \caption{authentication during push the file from local computer to "github.com/farhan-93/assignment01.git"}
@@ -116,6 +114,16 @@ Pushing is the process of remotely update the file to gitHub repository from the
 \label{cpush1}
 \end{figure}
 
+
+\subsection{Git Status}
+\par We can inspect the repository using "git status" command. It shows the staging and state of working directory. If any of the file is changed and not commit yet, than we can check it using git status command, see figure \ref{cpush1}.
+\par
+\par
+
+\par GitHub URL: \url{https://github.com/farhan-93/assignment01.git}
+
+
+ 
 %----------------------------------------------------------------------------------------
 
 \end{document}
